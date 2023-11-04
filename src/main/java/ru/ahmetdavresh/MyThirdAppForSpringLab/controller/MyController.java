@@ -60,6 +60,6 @@ public class MyController {
 
         modifyResponseService.modify(response);
         log.info("Ответ: {}", response);
-        return new ResponseEntity<>(response, HttpStatus.OK);
+        return new ResponseEntity<>(modifyResponseService.modify(response), HttpStatus.OK);
     }
 }

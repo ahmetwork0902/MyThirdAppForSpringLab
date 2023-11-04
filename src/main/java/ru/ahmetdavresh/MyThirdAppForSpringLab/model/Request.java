@@ -5,10 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 @Data
 @Builder
@@ -24,7 +21,7 @@ public class Request {
     @Size(max = 32)
     private String operationUid;
 
-    private Systems systemName;  // Тип поля изменен на Systems
+    private Systems systemName;
 
     @NotBlank
     private String systemTime;
